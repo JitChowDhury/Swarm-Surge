@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\CODE\C++\RAYLIB\SWARM SURGE\CMakeFiles\951567c8e8a0349f16474f4b715b0dfa\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E39E2473-6D4D-34EB-A8F6-DD9DD10319BE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

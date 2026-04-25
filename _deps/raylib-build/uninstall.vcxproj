@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC41FCD2-2CEB-3D3F-8F0B-BB35064BF498}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>uninstall</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CODE\C++\RAYLIB\SWARM SURGE\CMakeFiles\a3ec0f2e690b50080dc91967ae8b6177\uninstall.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\mingw64\bin\cmake.exe -P "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-build/cmake_uninstall.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\mingw64\bin\cmake.exe -P "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-build/cmake_uninstall.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\mingw64\bin\cmake.exe -P "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-build/cmake_uninstall.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\mingw64\bin\cmake.exe -P "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-build/cmake_uninstall.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SE:/CODE/C++/RAYLIB/SWARM SURGE" "-BE:/CODE/C++/RAYLIB/SWARM SURGE" --check-stamp-file "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\mingw64\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in;C:\mingw64\share\cmake-3.29\Modules\CMakeCCompilerABI.c;C:\mingw64\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;C:\mingw64\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\CMakeFiles\3.29.3\CMakeCCompiler.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\CMakeOptions.txt;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\AddIfFlagCompiles.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\CompilerFlags.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\EnumOption.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\ParseConfigHeader.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\Uninstall.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SE:/CODE/C++/RAYLIB/SWARM SURGE" "-BE:/CODE/C++/RAYLIB/SWARM SURGE" --check-stamp-file "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\mingw64\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in;C:\mingw64\share\cmake-3.29\Modules\CMakeCCompilerABI.c;C:\mingw64\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;C:\mingw64\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\CMakeFiles\3.29.3\CMakeCCompiler.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\CMakeOptions.txt;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\AddIfFlagCompiles.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\CompilerFlags.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\EnumOption.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\ParseConfigHeader.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\Uninstall.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SE:/CODE/C++/RAYLIB/SWARM SURGE" "-BE:/CODE/C++/RAYLIB/SWARM SURGE" --check-stamp-file "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\mingw64\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in;C:\mingw64\share\cmake-3.29\Modules\CMakeCCompilerABI.c;C:\mingw64\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;C:\mingw64\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\CMakeFiles\3.29.3\CMakeCCompiler.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\CMakeOptions.txt;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\AddIfFlagCompiles.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\CompilerFlags.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\EnumOption.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\ParseConfigHeader.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\Uninstall.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SE:/CODE/C++/RAYLIB/SWARM SURGE" "-BE:/CODE/C++/RAYLIB/SWARM SURGE" --check-stamp-file "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\mingw64\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in;C:\mingw64\share\cmake-3.29\Modules\CMakeCCompilerABI.c;C:\mingw64\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;C:\mingw64\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\CMakeFiles\3.29.3\CMakeCCompiler.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\CMakeOptions.txt;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\AddIfFlagCompiles.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\CompilerFlags.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\EnumOption.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\ParseConfigHeader.cmake;E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-src\cmake\Uninstall.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\CODE\C++\RAYLIB\SWARM SURGE\_deps\raylib-build\CMakeFiles\uninstall">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\CODE\C++\RAYLIB\SWARM SURGE\ZERO_CHECK.vcxproj">
+      <Project>{022128A3-7A27-3651-B554-F5A05A667185}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

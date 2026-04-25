@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/raylib-populate"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/a6d0065ca916e81c680bb74ad1139099/raylib-populate.rule"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/953d7eecd02ebc74e591740491c9fb48/raylib-populate-complete.rule"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/d73bea15726e3d4926d4260a43a48b55/raylib-populate-build.rule"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/d73bea15726e3d4926d4260a43a48b55/raylib-populate-configure.rule"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/d73bea15726e3d4926d4260a43a48b55/raylib-populate-download.rule"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/d73bea15726e3d4926d4260a43a48b55/raylib-populate-install.rule"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/d73bea15726e3d4926d4260a43a48b55/raylib-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/d73bea15726e3d4926d4260a43a48b55/raylib-populate-patch.rule"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/d73bea15726e3d4926d4260a43a48b55/raylib-populate-test.rule"
+		},
+		{
+			"file" : "E:/CODE/C++/RAYLIB/SWARM SURGE/_deps/raylib-subbuild/CMakeFiles/d73bea15726e3d4926d4260a43a48b55/raylib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"raylib-populate"
+		],
+		"name" : "raylib-populate"
+	}
+}
