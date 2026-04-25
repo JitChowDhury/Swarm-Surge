@@ -1,5 +1,6 @@
 # Ignore build files
 build/
+Assets/
 
 # Ignore VSCode or IDE files (optional)
 .vscode/
