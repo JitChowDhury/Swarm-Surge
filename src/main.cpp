@@ -13,6 +13,8 @@ int main()
 
   Texture2D background = LoadTexture("Assets/images/Floor.png");
   Texture2D walls = LoadTexture("Assets/images/Walls.png");
+  Texture2D playerTex = LoadTexture("Assets/images/survivor-idle_shotgun_0.png");
+
   RenderTexture2D canvas = LoadRenderTexture(BASE_W, BASE_H);
   SetTextureFilter(canvas.texture, TEXTURE_FILTER_BILINEAR);
 
@@ -20,8 +22,8 @@ int main()
   {
     BeginTextureMode(canvas);
     DrawTexture(background, 0, 0, WHITE);
+    DrawTextureEx(playerTex, {400.0f, 400.0f}, 0.0f, 0.3f, WHITE);
     DrawTexture(walls, 0, 0, WHITE);
-    DrawText("", 24, 24, 20, WHITE);
     EndTextureMode();
 
     float scale = std::min(
@@ -43,6 +45,7 @@ int main()
 
   UnloadTexture(background);
   UnloadTexture(walls);
+  UnloadTexture(playerTex);
   UnloadRenderTexture(canvas);
   CloseWindow();
   return 0;
