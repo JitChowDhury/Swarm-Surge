@@ -25,8 +25,14 @@ int main()
 
   while (!WindowShouldClose())
   {
+
+    float dt = GetFrameTime();
+    camera.target.x += dt * 300.0f;
+    camera.target.y += dt * 150.0f;
+
     BeginTextureMode(canvas);
     BeginMode2D(camera);
+    ClearBackground(BLACK);
     DrawTexture(background, 0, 0, WHITE);
     // DrawTextureEx(playerTex, {400.0f, 400.0f}, 0.0f, 0.3f, WHITE);
     DrawTexture(walls, 0, 0, WHITE);
