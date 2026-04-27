@@ -21,6 +21,7 @@ FetchContent_MakeAvailable(raylib)
 # Collect sources
 file(GLOB SRC_FILES src/*.cpp)
 file(GLOB HEADER_FILES include/*.h)
+file(GLOB HEADER_FILES include/*.hpp)
 
 # Define the executable
 add_executable(SwarmSurge ${SRC_FILES} ${HEADER_FILES})
