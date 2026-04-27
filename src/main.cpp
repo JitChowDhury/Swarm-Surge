@@ -3,6 +3,7 @@
 #include <filesystem>
 #include <algorithm>
 #include "GameConfig.hpp"
+#include "Sprite.hpp"
 
 int main()
 {
@@ -27,8 +28,18 @@ int main()
   camera.target = {400.f, 400.f};
   camera.offset = {halfW, halfH};
 
+  Transform2D playerTransform;
+  playerTransform.position = {mapW * 0.5f, mapH * 0.5f};
+  playerTransform.scale = GameConfig::PLAYER_SCALE;
+
+  Sprite playerSprite;
+  playerSprite.Init(&playerTex);
+
   while (!WindowShouldClose())
   {
+
+    if (IsKeyPressed(KEY_F1))
+      Sprite::showDebug = !Sprite::showDebug;
 
     float dt = GetFrameTime();
 
@@ -45,8 +56,8 @@ int main()
     BeginMode2D(camera);
     ClearBackground(BLACK);
     DrawTexture(background, 0, 0, WHITE);
+    playerSprite.Draw(playerTransform);
     DrawTexture(walls, 0, 0, WHITE);
-    DrawTextureEx(playerTex, {400.0f, 400.0f}, 0.0f, 1.0f, WHITE);
     EndMode2D();
 
     DrawRectangle(0, GameConfig::BASE_H - 32, GameConfig::BASE_W, 32, ColorAlpha(DARKBLUE, 0.6f));
