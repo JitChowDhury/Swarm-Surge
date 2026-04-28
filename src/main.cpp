@@ -3,7 +3,7 @@
 #include <filesystem>
 #include <algorithm>
 #include "GameConfig.hpp"
-#include "Sprite.hpp"
+#include "Player.hpp"
 
 int main()
 {
@@ -23,17 +23,13 @@ int main()
   float halfW = GameConfig::BASE_W * 0.5f;
   float halfH = GameConfig::BASE_H * 0.5f;
 
+  Player player(&playerTex);
+  player.SetPosition({mapW * 0.5f, mapH * 0.5f});
+
   Camera2D camera = {};
   camera.zoom = 1.f;
-  camera.target = {400.f, 400.f};
+  camera.target = player.GetPosition();
   camera.offset = {halfW, halfH};
-
-  Transform2D playerTransform;
-  playerTransform.position = {mapW * 0.5f, mapH * 0.5f};
-  playerTransform.scale = GameConfig::PLAYER_SCALE;
-
-  Sprite playerSprite;
-  playerSprite.Init(&playerTex);
 
   while (!WindowShouldClose())
   {
@@ -46,8 +42,9 @@ int main()
     float moveX = (IsKeyDown(KEY_D) ? 1.0f : 0.0f) - (IsKeyDown(KEY_A) ? 1.0f : 0.0f);
     float moveY = (IsKeyDown(KEY_S) ? 1.0f : 0.0f) - (IsKeyDown(KEY_W) ? 1.0f : 0.0f);
 
-    camera.target.x += dt * 300.0f * moveX;
-    camera.target.y += dt * 300.0f * moveY;
+    player.Update({moveX, moveY}, dt);
+
+    camera.target = player.GetPosition();
 
     camera.target.x = std::clamp(camera.target.x, halfW, mapW - halfW);
     camera.target.y = std::clamp(camera.target.y, halfH, mapH - halfH);
@@ -56,13 +53,15 @@ int main()
     BeginMode2D(camera);
     ClearBackground(BLACK);
     DrawTexture(background, 0, 0, WHITE);
-    playerSprite.Draw(playerTransform);
+    player.Draw();
     DrawTexture(walls, 0, 0, WHITE);
     EndMode2D();
 
     DrawRectangle(0, GameConfig::BASE_H - 32, GameConfig::BASE_W, 32, ColorAlpha(DARKBLUE, 0.6f));
-    const char *labelText = TextFormat("Camera:%.0f,%.0f", camera.target.x, camera.target.y);
-    DrawText(labelText, 12, GameConfig::BASE_H - 24, 20, LIME);
+
+    DrawText(TextFormat("Player: %.0f, %.0f", player.GetPosition().x, player.GetPosition().y), 12, GameConfig::BASE_H - 24, 20, LIME);
+    DrawText(TextFormat("Camera: %.0f, %.0f", camera.target.x, camera.target.y), 256, GameConfig::BASE_H - 24, 20, LIME);
+    DrawText(TextFormat("Map: %.0f, %.0f", mapW, mapH), 512, GameConfig::BASE_H - 24, 20, LIME);
 
     EndTextureMode();
 

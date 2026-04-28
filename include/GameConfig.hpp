@@ -7,4 +7,5 @@ namespace GameConfig
 
   // player
   const float PLAYER_SCALE = 1.0f;
+  const float PLAYER_SPEED = 200.0f;
 }
