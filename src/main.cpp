@@ -3,6 +3,7 @@
 #include <filesystem>
 #include <algorithm>
 #include "GameConfig.hpp"
+#include "CollisionMap.hpp"
 #include "Player.hpp"
 
 int main()
@@ -14,6 +15,10 @@ int main()
   Texture2D background = LoadTexture("Assets/images/Floor.png");
   Texture2D walls = LoadTexture("Assets/images/Walls.png");
   Texture2D playerTex = LoadTexture("Assets/tds_textures/citizenplayer_handgun.png");
+  // Texture stores in gpu and image in normal ram we dont want to draw it so image
+  Image bgCollisionImg = LoadImage("Assets/images/gameBgCollision.png");
+  CollisionMap collisionMap;
+  collisionMap.Init(&bgCollisionImg);
 
   RenderTexture2D canvas = LoadRenderTexture(GameConfig::BASE_W, GameConfig::BASE_H);
   SetTextureFilter(canvas.texture, TEXTURE_FILTER_BILINEAR);
@@ -25,6 +30,7 @@ int main()
 
   Player player(&playerTex);
   player.SetPosition({mapW * 0.5f, mapH * 0.5f});
+  player.SetCollisionMap(&collisionMap);
 
   Camera2D camera = {};
   camera.zoom = 1.f;
@@ -67,7 +73,7 @@ int main()
 
     float scale = std::min(
         (float)GetScreenWidth() / GameConfig::BASE_W,
-        (float)GetScreenWidth() / GameConfig::BASE_H);
+        (float)GetScreenHeight() / GameConfig::BASE_H);
 
     float offsetX = (GetScreenWidth() - GameConfig::BASE_W * scale) * 0.5f;
     float offsetY = (GetScreenHeight() - GameConfig::BASE_H * scale) * 0.5f;
@@ -86,6 +92,7 @@ int main()
   UnloadTexture(walls);
   UnloadTexture(playerTex);
   UnloadRenderTexture(canvas);
+  UnloadImage(bgCollisionImg);
   CloseWindow();
   return 0;
 }

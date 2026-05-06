@@ -18,6 +18,11 @@ void Player::SetPosition(Vector2 position)
   transform.position = position;
 }
 
+void Player::SetCollisionMap(const CollisionMap *collisionMap)
+{
+  this->collisionMap = collisionMap;
+}
+
 void Player::Draw() const
 {
   sprite.Draw(transform);
@@ -25,5 +30,5 @@ void Player::Draw() const
 
 void Player::Update(Vector2 moveDir, float delta)
 {
-  movement.Update(transform, moveDir, delta);
+  movement.Update(transform, moveDir, delta, collisionMap);
 }
